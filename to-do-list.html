@@ -1,0 +1,80 @@
+<html>
+    <title>
+        to-do-list 
+    </title>
+    <body> 
+        <h1 align="center"><u>To-Do-List</u></h1>
+     
+<div>
+     <input  type="text" placeholder="Write your list here :D" id="in">  <button  onclick="f1()">Add</button>
+    <ul id="list" > 
+
+     </ul>
+     <button class="remove"  onclick="f3()">Task Done</button>
+   
+    </div> 
+
+
+
+
+     <script src="to-do-list.js"></script>
+     <style>
+         ul{
+         top:0px;
+            width:150px;
+            padding:0px;
+             list-style: none;
+         }
+         div{
+            width:300px;
+           
+            margin:auto;
+             
+             
+             
+          
+         }
+         input{ 
+         text-transform: capitalize;
+             height:50px;
+             width:200px;
+         }
+         .remove{
+            height:50px;
+            width:120px;
+
+         }
+         button:hover{
+             background:coral;
+         }
+         button{
+        height:50px;
+        width:60px;
+         }
+         li{ text-transform: capitalize;
+         
+           
+
+             font-size: 25px;
+         }
+           li:hover{ 
+             cursor:pointer;
+             
+             
+
+         }
+        .none{
+            text-decoration: none;
+
+        }
+         
+         .line{
+             cursor:pointer;
+             text-decoration: line-through;
+         }
+       
+     </style>
+
+
+    </body>
+</html>
