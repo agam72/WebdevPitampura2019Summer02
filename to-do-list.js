@@ -1,5 +1,6 @@
 function f1(){
 var a = document.getElementById("in").value;
+    document.getElementById("in").value="";
 
 
 
