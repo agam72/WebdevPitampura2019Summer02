@@ -1,9 +1,5 @@
 let todo=[]
-todo= JSON.parse(localStorage.getItem("todo"))
-if(todo=null)
-{}
-else
-paint()
+
 
 
 
@@ -51,5 +47,9 @@ document.getElementById("remove").addEventListener("click",e=>{
     localStorage.removeItem("todo");
 localStorage.setItem("todo", JSON.stringify(todo));
 })
-
+todo= JSON.parse(localStorage.getItem("todo"))
+if(todo=null)
+{}
+else
+paint()
 
