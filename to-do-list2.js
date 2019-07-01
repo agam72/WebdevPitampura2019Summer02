@@ -1,4 +1,9 @@
 let todo=[]
+todo= JSON.parse(localStorage.getItem("todo"))
+if(todo=null)
+{}
+else
+paint()
 
 
 
