@@ -1,4 +1,6 @@
 let todo=[]
+todo= JSON.parse(localStorage.getItem("todo"))
+paint()
 
 
 const render=(state)=>{
@@ -46,6 +48,4 @@ document.getElementById("remove").addEventListener("click",e=>{
 localStorage.setItem("todo", JSON.stringify(todo));
 })
 
-todo= JSON.parse(localStorage.getItem("todo"))
-paint()
 
