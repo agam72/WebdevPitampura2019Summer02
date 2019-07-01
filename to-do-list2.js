@@ -1,6 +1,5 @@
 let todo=[]
-todo= JSON.parse(localStorage.getItem("todo"))
-paint()
+
 
 
 const render=(state)=>{
