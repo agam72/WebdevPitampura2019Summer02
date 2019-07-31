@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="blackjack.css">
+</head>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <a class="navbar-brand">Navbar</a> -->
+        <img   src="JPEG/AS.jpg"  height="45px" width="47px">    <img   src="JPEG/JS.jpg"  height="45px" width="47px">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Rules</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#">PLAY <span class="sr-only">(current)</span></a>
+            </li>
+           
+
+           
+          </ul>
+        </div>
+      </nav>
+ 
+    
+  
+   <div class="container maindiv">
+      <div class="dealerdiv">
+        <div id="dealer-cards">
+      </div>
+      
+       <div id="dealer-score">
+      </div>
+      </div>
+     
+       <div class="playerdiv">
+       <div id="player-card"> 
+         <!-- <img src="JPEG\QD.jpg" height="100px" width="100px"> -->
+        
+       </div>
+      
+      
+       <div id="player-score">
+
+      </div>
+      <!-- <div id="player-money">
+
+        </div> -->
+    </div>
+    
+      <div id="options">
+         <div id="player-money">
+
+        </div>
+         
+    <div style="color: white">PLACE YOUR BET:<span id="rangevalue"></span></div> <input id="bet" type="range" min="10" step="5" max="100"><br>
+     <button id="newgame-button" class="button" onclick=" newgame()">New Game</button>
+     <button id="hit-button" onclick="hit()">Hit</button>
+     <button id="stand-button" onclick=" stand()">Stand</button> <br>
+     </div>
+   </div>
+   <div class="card">
+     <div class="card-header">MESSAGE BOX</div>
+     <div class="card-content "id="message-board"></div>
+
+   </div>
+ 
+   <script src="blaackjack.js"> </script>
+</body>
+</html>
